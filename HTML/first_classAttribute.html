@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        .subnote {
+            font-size: 120%;
+            color: darkblue;;
+        }
+
+        #id{
+            color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="city subnote">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <hr>
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="subnote">important</span> text.</p>
+    <button onclick="myFunction()">Click to hide class "city"</button>
+    <h1 id="id">Something</h1>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for(var i = 0; i <x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

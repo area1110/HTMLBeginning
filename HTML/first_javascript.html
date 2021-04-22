@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="changeText">This text will change</h1>
+    <button onclick="change()">Transform</button>
+    <hr>
+    <img src="https://www.w3schools.com/html/pic_bulboff.gif" id="theLight">
+
+    <p>
+        <button onclick="turnLight(1)">Light ON</button>
+        <button onclick="turnLight(0)">Light OFF</button>
+    </p>
+
+
+    <script>
+        function turnLight(st) {
+            var light;
+            if (st == 0) {
+                light = "https://www.w3schools.com/html/pic_bulboff.gif";
+            } else {
+                light = "https://www.w3schools.com/html/pic_bulbon.gif";
+            }
+            document.getElementById("theLight").src = light;
+        }
+
+        function change() {
+            var x = document.getElementById("changeText");
+            var y;
+            if (x.innerHTML == "This text will change") {
+                y = x;
+                x.innerHTML = "Hello JavaScript";
+                x.style.fontSize = "100px";
+                x.style.color = "cyan";
+                x.style.background = "tomato";
+            }
+            else {
+                x.innerHTML = "This text will change";
+            }
+        }
+    </script>
+</body>
+
+</html>
