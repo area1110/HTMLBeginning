@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fex Box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        header {
+            background-color: #454545;
+            color: white;
+            text-align: center;
+            padding: 35px;
+
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+
+        }
+
+        nav {
+            background-color: #767676;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            color: white;
+
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #777;
+            text-align: center;
+            padding: 7px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>Hanoi</li>
+                <li>Hue</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Hue</h2>
+            <p>Hue la mot thanh pho nam o trung bo Vietnam.</p>
+        </article>
+    </section>
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+</body>
+
+</html>
