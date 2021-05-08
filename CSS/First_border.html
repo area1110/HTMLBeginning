@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                padding: 10px;
+                margin: 10px;
+            }
+            #dotted {
+                border-style: dotted;
+                border-width: 10px;  
+                border-color: tomato;            
+            }
+
+            #dashed {
+                border-style: dashed;    
+                border-width: 5px;
+                border-color: #234f93;            
+            }
+
+            #solid {
+                border-style: solid;
+                border-width: 20px 5px;
+                border-color: cyan red;
+            }
+
+            #double {
+                border-style: double;
+                border-width: 5px 10px 15px 20px;
+                border-color: tomato aquamarine bisque blueviolet;
+            }
+
+            #groove {
+                border-style: groove;
+                border-color: #264588;
+            }
+
+            #ridge {
+                border-style: ridge;
+            }
+
+            #inset {
+                border-style: inset;
+            }
+
+            #outset {
+                border-style: outset;
+            }
+
+            #none {
+                border-style: none;
+            }
+
+            #hidden {
+                border-style: hidden;
+            }
+            #mix {
+                border-style: dotted dashed solid double;
+                border-radius: 100px;
+            }
+            #half {
+                border-top-style: dotted;
+                border-top-color: blue;
+                border-right-style: solid;
+                border-right-color: tomato;
+                
+            }
+            #shortMix {
+                border-style: groove dotted solid;
+            }
+            #shorthand {
+                border: 10px solid yellowgreen; /* width style color */
+                border-radius: 10px;
+            }
+            #individual {
+                border-left: 6px solid mediumaquamarine;
+                background-color: #6e6e6e;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dotted">I have borders on all sides.</div>
+        <div id="dashed">I have borders on all sides.</div>
+        <div id="solid">I have borders on all sides.</div>
+        <div id="double">I have borders on all sides.</div>
+        <div id="groove">I have borders on all sides.</div>
+        <div id="ridge">I have borders on all sides.</div>
+        <div id="inset">I have borders on all sides.</div>
+        <div id="outset">I have borders on all sides.</div>
+        <div id="none">I have borders on all sides.</div>
+        <div id="hidden">I have borders on all sides.</div>
+        <div id="mix">I have borders on all sides.</div>
+        <div id="half">I have borders on some sides.</div>
+        <div id="shortMix" >I have borders with mix value.</div>
+        <div id="shorthand">I have borders on all sides but with shorthand properties.</div>
+        <div id="individual">I have a left border with shorthand properties.</div>
+    </body>
+</html>
